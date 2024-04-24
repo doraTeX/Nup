@@ -52,6 +52,10 @@ $ Nup --rows 1 --columns 2 input.pdf output.pdf
 $ Nup --direction horizontalR2L input.pdf output.pdf
 ```
 
+# Option Behavior Examples
+
+![Option Behavior Examples](examples.png)
+
 # Details
 
 See my [blog entry](https://doratex.hatenablog.jp/entry/) (in Japanese) for more information.
