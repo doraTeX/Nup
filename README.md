@@ -58,7 +58,7 @@ $ Nup --direction horizontalR2L input.pdf output.pdf
 
 # Details
 
-See my [blog entry](https://doratex.hatenablog.jp/entry/) (in Japanese) for more information.
+See my [blog entry](https://doratex.hatenablog.jp/entry/20240425/1713981026) (in Japanese) for more information.
 
 # License
 
