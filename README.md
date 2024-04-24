@@ -2,7 +2,7 @@
 A command-line tool for N-up processing of PDFs using macOS APIs, written in Swift.
 
 # How to Compile
-## 1. Install Xcode Command Line Tools
+## 1. Install Command Line Tools for Xcode
 
 ```sh
 xcode-select --install
