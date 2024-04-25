@@ -6,6 +6,8 @@
 
 import Quartz
 
+let VERSION = "0.1.0"
+
 // Definition of structures
 struct CommandLineArguments {
     var rows: Int
@@ -66,6 +68,9 @@ func parseArguments(arguments: [String]) -> CommandLineArguments? {
             }
             direction = value
             currentIndex += 2
+        case "-v", "--version":
+            print(VERSION)
+            exit(0)
         case "-h", "--help":
             showUsage()
             exit(0)
@@ -97,19 +102,20 @@ func showUsage() {
 Usage: Nup [OPTIONS] <INPUT_PDF_PATH> <OUTPUT_PDF_PATH>
 
 Arguments:
-  <INPUT_PDF_PATH>         Path to the input PDF file
-  <OUTPUT_PDF_PATH>        Path to the output PDF file
+  <INPUT_PDF_PATH>         Path to the input PDF file.
+  <OUTPUT_PDF_PATH>        Path to the output PDF file.
 
 Options:
-  --rows <ROWS>            Set the number of rows (default: 1)
-  --columns <COLUMNS>      Set the number of columns (default: 2)
-  --direction <DIRECTION>  Set the direction (default: horizontalL2R)
+  --rows <ROWS>            Set the number of rows (default: 1).
+  --columns <COLUMNS>      Set the number of columns (default: 2).
+  --direction <DIRECTION>  Set the direction (default: horizontalL2R).
                             Valid directions:
-                              - horizontalL2R (from left to right, horizontally)
-                              - horizontalR2L (from right to left, horizontally)
-                              - verticalL2R   (from top to bottom vertically, left to right horizontally)
-                              - verticalR2L   (from top to bottom vertically, right to left horizontally)
-  -h, --help               Show help information
+                              - horizontalL2R (from left to right, horizontally).
+                              - horizontalR2L (from right to left, horizontally).
+                              - verticalL2R   (from top to bottom vertically, left to right horizontally).
+                              - verticalR2L   (from top to bottom vertically, right to left horizontally).
+  -v, --version            Show the version.
+  -h, --help               Show help information.
 
 Examples:
   Nup input.pdf output.pdf

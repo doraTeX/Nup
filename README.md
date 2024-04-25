@@ -30,8 +30,8 @@ This will generate the `Nup` binary.
 
 ## Arguments
 
-* `<INPUT_PDF_PATH>`:  Path to the input PDF file
-* `<OUTPUT_PDF_PATH>`: Path to the output PDF file
+* `<INPUT_PDF_PATH>`:  Path to the input PDF file.
+* `<OUTPUT_PDF_PATH>`: Path to the output PDF file.
 
 ## Options
 * `--rows <ROWS>`:  Set the number of rows (default: `1`).
@@ -42,6 +42,7 @@ This will generate the `Nup` binary.
      * `horizontalR2L`: From right to left, horizontally.
      * `verticalL2R`: From top to bottom vertically, left to right horizontally.
      * `verticalR2L`: From top to bottom vertically, right to left horizontally.
+* `-v`, `--version`: Show the version.
 * `-h`, `--help`: Show help information.
 
 # Examples
